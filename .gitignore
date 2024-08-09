@@ -1,14 +1,48 @@
+# Dependencies
 node_modules/
+
+# Expo
 .expo/
 dist/
+web-build/
+expo-env.d.ts
+
+# Debug
 npm-debug.*
+yarn-debug.*
+yarn-error.*
+.metro-health-check*
+
+# Native
+*.orig.*
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-*.orig.*
-web-build/
+
+# iOS
+ios/certs/*
+ios/
+
+# Android
+android/*
 
 # macOS
 .DS_Store
+*.pem
+
+# Environment variables
+.env*.local
+.env*
+
+# TypeScript
+*.tsbuildinfo
+
+# Miscellaneous
+*.orig.*
+
+
+
+# Learn more about .gitignore:
+# https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files

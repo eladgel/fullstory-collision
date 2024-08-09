@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.my-test-app"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,7 +28,26 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "@bacons/apple-targets",
+        {
+          "appleTeamId": "xxxxxxxx"
+        }
+      ],
+      [
+        "@fullstory/react-native",
+        {
+          "version": "1.49.0",
+          "org": "o-1NMPJJ-na1",
+          "enabledVariants": "all",
+          "additionalConfigs": {
+            "ios": {
+              "ScanAsynchronously": true
+            }
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

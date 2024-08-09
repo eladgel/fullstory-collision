@@ -1,0 +1,13 @@
+{
+    "type": "share",
+    "frameworks": [
+        "UIKit",
+        "Social",
+        "MobileCoreServices",
+        "UniformTypeIdentifiers"
+    ],
+    "entitlements": {      
+        "com.apple.security.application-groups": ["group.com.yourcompany.my-test-app"],
+        "keychain-access-groups": ["$(AppIdentifierPrefix)com.yourcompany.my-test-app"]
+    }
+}
